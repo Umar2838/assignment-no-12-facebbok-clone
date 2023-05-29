@@ -198,6 +198,9 @@ font-weight: bold;
   width: 110px;
   list-style: none;
   background-image:url(images/A_Story.jpg) ;
+  background-repeat: no-repeat;
+
+  background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   height: 170px;
   position: relative;
@@ -210,7 +213,10 @@ font-weight: bold;
   border-radius:10px;
   width: 110px;
   list-style: none;
-  background-image:url(images/story\ 3.jpg) ;
+  background-image:url(images/story.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   height: 170px;
   position: relative;
@@ -223,7 +229,9 @@ font-weight: bold;
   border-radius:10px;
   width: 110px;
   list-style: none;
-  background-image:url(images/story\ 2.jpg) ;
+  background-image:url(images/story\ 3.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   height: 170px;
   position: relative;
@@ -273,6 +281,61 @@ font-weight: bold;
 }
 .post-text{
   margin-left: 5px;
+}
+/* OnFocus Post Card Section */
+
+.post-card{
+  background-color: white;
+  width: 500px;
+  height: 380px;
+  position: relative;
+  margin: -350px auto;
+  /* margin: auto 500px; */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.post-text{
+  text-align: center;
+}
+.profile-post2{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+.name{
+  margin-top: -44px;
+  font-weight: bold;
+  font-size: 13px;
+ margin-left:  44px;
+}
+.friend-button{
+  border: none;
+  font-size: 10px;
+  width: fit-content;
+  margin-left: 46px;
+  padding-left: 2px;
+  margin-top: -14px;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  
+}
+.post-text-area{
+  margin-top:20px ;
+  height: 150px;
+  cursor: text;
+  width: 100%;
+  border: none;
+size-adjust: none;
+font-size: 24px;
+
+resize: none;
+
+}
+.post-text-area:focus{
+  outline: none;
 }
 /* Navbar Responsive Section */
 @media only screen and (max-width: 600px) {
