@@ -12,7 +12,7 @@
 
     <title>Facebook</title>
   </head>
-  <body>
+  <body >
     <!-- Navbar Section -->
     <div class="navbar">
       <img class="logo" src="images/facebook name logo.png" />
@@ -73,7 +73,7 @@
   
       <div class="post-bar">
         <img class="profile-post" src="images/profilefacebook.jpg">
-  <input class="post-input" id="input-box" placeholder="What's on your mind, Umar?"></input>
+  <input class="post-input" id="input-box" ondblclick="postcardopen()" onblur="postcardremove()" placeholder="What's on your mind, Umar?"></input>
   <hr class="post-line">
 
   <ul class="post-ul">
@@ -82,14 +82,27 @@
     <li class="post-icons"><i class="fa-sharp fa-solid fa-face-smile fa-xl" style="color: #fdf626;"></i><span class="post-text">Feeling/activity</span></li>
   </ul>
       </div>
-<div class="post-card" id="input-box">
-  <p class="post-text" >Create Post</p>
-  <hr>
-  <img src="images/profilefacebook.jpg" class="profile-post2">
+
+<div class="post-card"  id="postCard">
+  <p class="post-text" >Create Post</p><hr><img src="images/profilefacebook.jpg" class="profile-post2">
   <p class="name">Umar Aqeel</p>
   <div class="friend-button"><i class="fa-solid fa-user fa-sm" style="color: #57595c;"></i>Friends excepts<i class="fa-solid fa-caret-down fa-lg"></i></div>
-<textarea placeholder="What's on your mind, Umar?" class="post-text-area"></textarea>
+  <textarea id="textarea"  placeholder="Whats on your mind, Umar?" class="post-text-area"></textarea>
+  
+  <div class="color-change">
+    <img class="img-changing" id="image" onclick="imagebackgroundpost1()" height="38" src="images/color change 1.jpg" alt="">
+    <img class="img-changing" height="38" onclick="imagebackgroundpost2()" src="images/color change 2.jpg" alt="">
+    <img class="img-changing" height="38" onclick="imagebackgroundpost3()" src="images/color change 3.jpg" alt="">
+    <img class="img-changing" height="38" onclick="imagebackgroundpost4()" src="images/color change 4.jpg" alt="">
+    <img class="img-changing" height="38" onclick="imagebackgroundpost5()" src="images/color change 5.jpg" alt="">
+    <img class="img-changing" height="38" onclick="imagebackgroundpost6()" src="images/color change 6.jpg" alt="">
+    <img class="img-changing" height="38" onclick="imagebackgroundpost7()" src="images/color change 7.jpg" alt="">
+  </div>
+  
+  <button id="postbut" class="postbutton">Post</button>
+
 </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
 "></script>
     <script

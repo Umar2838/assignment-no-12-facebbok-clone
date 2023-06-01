@@ -7,7 +7,9 @@
 }
 body {
   background-color: #f0f2f5 !important;
+ 
 }
+
 /* Navbar Section */
 
 .navbar {
@@ -290,11 +292,11 @@ font-weight: bold;
   height: 380px;
   position: relative;
   margin: -350px auto;
-  /* margin: auto 500px; */
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  display: none;
+  /* display: none; */
+
 }
 .post-text{
   text-align: center;
@@ -336,6 +338,31 @@ resize: none;
 }
 .post-text-area:focus{
   outline: none;
+}
+.color-change{
+  display: flex;
+
+
+
+}
+.img-changing{
+  margin-top: -5px;
+  margin-left: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#textarea::placeholder{
+  color: #fff;
+}
+.postbutton{
+  width: 100%;
+  margin-top: 15px;
+  height: 40px;
+  margin-bottom:30px;
+  border-radius: 10px;
+  background-color: #3e7be5;
+  border: none;
 }
 /* Navbar Responsive Section */
 @media only screen and (max-width: 600px) {
